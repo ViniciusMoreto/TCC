@@ -1,5 +1,21 @@
 @charset "UTF-8";
 
-header {
-    background-color: rgb(80, 205, 255);
+body {
+    max-width: 100%;
+    margin: auto;
+    padding: 10px 10px;
+    background-color: #efefef;
 }
+
+
+header {
+    background-color: #1e8fff;
+    border-radius: 5px;
+
+}
+
+header img {
+    width: 150px;
+    
+}
+
