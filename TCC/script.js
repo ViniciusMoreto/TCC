@@ -26,4 +26,3 @@ function moveSlide(step) {
     showSlide(currentIndex);  
 }  
 
-// Exibe a
