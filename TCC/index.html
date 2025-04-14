@@ -9,17 +9,31 @@
 </head>
 <body>
     <header class="cabecalho">
-        <img src="./imagem/Logo_Empresa.png" alt="Logo da Empresa">
+        <img src="./imagem/Logo_Empresa.png" alt="Logo da Empresa Sport Max">
     </header>
 
-    <div class="carrosel">
-        <img src="./imagem/tenis_carrosel.PNG" alt="Carrosel">
-    </div>
+    <div class="carrosel">  
+        <div class="image-container active">  
+            <img src="imagem/BolaFutebol_carrosel.PNG" alt="Bola de futebol em promoção">  
+        </div>  
+        <div class="image-container">  
+            <img src="imagem/shorts_carrosel.PNG" alt="Shorts para esportes em promoção">  
+        </div> 
+        <div class="image-container">
+            <img src="imagem/tenis_carrosel.PNG" alt="tenis em promoção">
+        </div>
+
+        <!-- Adicione mais imagens conforme necessário -->
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>  
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>  
+    </div>  
 
     <div class="promocoes">
         <img src="imagem/Produto1.png" alt="promoção1">
         <img src="imagem/Produto2.png" alt="promoção2">
         <img src="imagem/Produto3.png" alt="promoção3">
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -6,11 +6,10 @@ body {
     max-width: 100%;
     margin: auto;
     padding: 0;
-
 }
 
 header {
-    background-color: #DCDCDC;
+    background-color: #B0B0B0; /* Cor de fundo do cabeçalho */
     margin: auto;
 }
 
@@ -19,16 +18,18 @@ header img {
 }
 
 .carrosel {
+    position: relative; /* Para posicionar os botões corretamente */
     display: flex;
     justify-content: center;
     margin: auto;
-    padding: 10px 10px 0px 10px;
+    padding: 10px;
 }
 
 .carrosel img {
-    width: 1250px;
+    width: 100%; /* Usar 100% para responsividade */
+    max-width: 1500px; /* Largura máxima */
+    height: auto; /* Altura automática para manter a proporção */
 }
-
 
 .promocoes {
     display: flex;
@@ -42,3 +43,30 @@ header img {
     height: 320px;
 }
 
+.image-container {
+    display: none; /* Inicialmente oculta as imagens */
+}
+
+.image-container.active {
+    display: block; /* Mostra a imagem ativa */
+}
+
+button {
+    position: absolute; /* Posiciona os botões */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.prev {
+    left: 400px; /* Posiciona o botão à esquerda */
+}
+
+.next {
+    right: 400px; /* Posiciona o botão à direita */
+}
