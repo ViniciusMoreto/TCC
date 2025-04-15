@@ -88,7 +88,7 @@ button {
 }  
 
 button:hover {  
-    background-color: #6495ED;  
+    background-color: #00008B(0, 38, 255, 0.5) ;  
 }  
 
 .registrar {  
