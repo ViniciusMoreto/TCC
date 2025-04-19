@@ -3,16 +3,12 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #DCDCDC;
-    max-width: 100%;
-    margin: auto;
-    padding: 0;
+    margin: 0;
 }
 
-
 header {
-
-    background-color: #B0B0B0; /* Cor de fundo do cabeçalho */
-    margin: auto;
+    background-color: #B0B0B0;
+    text-align: center; /* Centraliza o logotipo */
 }
 
 header img {
@@ -20,17 +16,16 @@ header img {
 }
 
 .carrosel {
-    position: relative; /* Para posicionar os botões corretamente */
+    position: relative;
     display: flex;
     justify-content: center;
-    margin: auto;
     padding: 10px;
 }
 
 .carrosel img {
-    width: 100%; /* Usar 100% para responsividade */
-    max-width: 1500px; /* Largura máxima */
-    height: auto; /* Altura automática para manter a proporção */
+    width: 100%; /* Ajusta a largura para 100% do contêiner */
+    max-width: 1250px; /* Limita a largura máxima */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
 .promocoes {
@@ -42,19 +37,19 @@ header img {
 
 .promocoes img {
     width: 350px;
-    height: 320px;
+    height: auto; /* Mantém a proporção da imagem */
 }
 
 .image-container {
-    display: none; /* Inicialmente oculta as imagens */
+    display: none;
 }
 
 .image-container.active {
-    display: block; /* Mostra a imagem ativa */
+    display: block;
 }
 
 button {
-    position: absolute; /* Posiciona os botões */
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
@@ -66,9 +61,13 @@ button {
 }
 
 .prev {
-    left: 400px; /* Posiciona o botão à esquerda */
+    left: 20px; /* Ajusta a posição do botão à esquerda */
 }
 
 .next {
-    right: 400px; /* Posiciona o botão à direita */
+    right: 20px; /* Ajusta a posição do botão à direita */
+}
+
+button:focus {
+    outline: 2px solid #fff; /* Adiciona um contorno ao botão quando focado */
 }
