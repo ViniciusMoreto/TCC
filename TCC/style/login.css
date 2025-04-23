@@ -1,109 +1,126 @@
-* {  
-    margin: 0;  
-    padding: 0;  
-    box-sizing: border-box;  
-    font-family: 'Poppins', sans-serif;  
-}  
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body {  
-    display: flex;  
-    align-items: center;  
-    justify-content: center;  
-    min-height: 100vh;  
-    background: #ffffff;  
-}  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+}
 
-section {  
-    background-color: #1E90FF;
-    max-width: 400px;  
-    border: 2px solid rgba(0, 0, 0, 0.5);  
-    border-radius: 20px;  
-    backdrop-filter: blur(20px);  
-    display: flex;  
-    flex-direction: column; /* Organiza os itens verticalmente */  
-    padding: 2rem 3rem;  
-    align-items: center;  
-}  
+body {
+    display: flex;
+    justify-content: center;
+    padding: 0 300px;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
 
-h1 {  
-    font-size: 2rem;  
-    color: #fff;  
-    text-align: center;  
-}  
+.container {
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    color: #000000;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(50px);
+    margin: 20px;
+}
 
-.inputbox {
+.container h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.input-box {
     position: relative;
-    margin: 30px 0;
-    width: 100%;
-    border-bottom: 2px solid #ffffff;
-    padding-top: 20px; /* Espaço para o label acima */
-}
-
-.inputbox label {
-    position: absolute;
-    top: 0; /* Fixa o label no topo do inputbox */
-    left: 5px;
-    color: #ffffff;
-    font-size: 0.9em;
-    pointer-events: none;
-}
-
-.inputbox input {
     width: 100%;
     height: 50px;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    padding: 0 35px 0 5px;
-    color: #fff;
-    margin-top: 5px; /* Pequeno espaçamento entre label e input */
+    margin: 30px 0;
+    margin-bottom: 15px;
 }
 
-.inputbox input:focus ~ label,  
-.inputbox input:valid ~ label {  
-    opacity: 1; /* Rótulo visível ao focar */  
-}  
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    outline: none;
+    font-size: 16px;
+    color: #000000;
+    padding: 20px 45px 20px 20px;
+}
 
-/* Para o ícone, se necessário */  
-.inputbox ion-icon {  
-    position: absolute;  
-    right: 8px;  
-    color: #fff;  
-    font-size: 1.2em;  
-    top: 20px;  
-}  
+.input-box input::placeholder {
+    color: #000000;
+}
 
-button {  
-    width: 100%;  
-    height: 40px;  
-    border-radius: 40px;  
-    background: rgba(255, 255, 255, 1);  
-    border: none;  
-    outline: none;  
-    cursor: pointer;  
-    font-size: 1em;  
-    font-weight: 600;  
-    transition: background-color 0.4s ease;  
-}  
+.input-box i {
+    position: absolute; 
+    right: 15px;
+    top: 50%; 
+    transform: translateY(-50%); 
+    cursor: pointer; 
+    font-size: 18px; 
+    color: #000000; 
+}
 
-button:hover {  
-    background-color: #00008B(0, 38, 255, 0.5) ;  
-}  
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+}
 
-.registrar {  
-    font-size: 0.9em;  
-    color: #fff;  
-    text-align: center;  
-    margin: 25px 0 10px;  
-}  
+.remember-forgot label input {
+    accent-color: #000000;
+    margin-right: 5px;
+}
 
-.registrar p a {  
-    text-decoration: none;  
-    font-weight: 600;  
-    color: #fff;  
-}  
+.remember-forgot a {
+    text-decoration: none;
+    color: #000000;
+}
 
-.registrar p a:hover {  
-    text-decoration: underline;  
-}  
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.login {
+    width: 100%;
+    height: 50px;
+    background-color: #000000;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    margin-top: 20px;
+}
+
+.login:hover {
+    background-color: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    color: #000000;
+    transition: 0.5s;
+}
+
+.register-link {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
