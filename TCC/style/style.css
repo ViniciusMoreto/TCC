@@ -2,30 +2,53 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #DCDCDC;
-    margin: 0;
+    background-color: #ffffff;
+    max-width: 100%;
+    margin: auto;
+    padding: 0;
 }
 
 header {
-    background-color: #B0B0B0;
-    text-align: center; /* Centraliza o logotipo */
+    background-color: #18c9ff;
+    margin: auto;
+    display: flex;
+    padding: 0 60px;
+
 }
 
 header img {
-    width: 150px;
+    width: 120px;
+}
+
+.pesquisa {
+    border: 1px solid #fff;
+    background-color: #fff;
+    width: 800px;
+    margin: auto;
+    flex-direction: row-reverse;
+    height: 40px;
+    color: #000000;
+    justify-content: center;
+}
+
+#searchInput {
+    padding: 14px;
+    border: none;
+    background-color: transparent;
+    outline: none;
 }
 
 .carrosel {
-    position: relative;
+    position: relative; /* Para posicionar os botões corretamente */
     display: flex;
     justify-content: center;
+    margin: auto;
     padding: 10px;
 }
 
 .carrosel img {
-    width: 100%; /* Ajusta a largura para 100% do contêiner */
-    max-width: 1250px; /* Limita a largura máxima */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 1350px;
+    height: 300px; 
 }
 
 .promocoes {
@@ -37,19 +60,20 @@ header img {
 
 .promocoes img {
     width: 350px;
-    height: auto; /* Mantém a proporção da imagem */
+    height: 320px;
 }
 
 .image-container {
-    display: none;
+    display: none; /* Inicialmente oculta as imagens */
 }
 
 .image-container.active {
-    display: block;
+    display: block; /* Mostra a imagem ativa */
 }
 
 button {
-    position: absolute;
+    font-size: 5vw;
+    position: absolute; /* Posiciona os botões */
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
@@ -61,13 +85,28 @@ button {
 }
 
 .prev {
-    left: 20px; /* Ajusta a posição do botão à esquerda */
+    left: 10px; /* Posiciona o botão à esquerda */
 }
 
 .next {
-    right: 20px; /* Ajusta a posição do botão à direita */
+    right: 10px; /* Posiciona o botão à direita */
 }
 
-button:focus {
-    outline: 2px solid #fff; /* Adiciona um contorno ao botão quando focado */
+@media (min-width: 768px) {
+    .nav-button {
+      font-size: 3vw;
+    }
 }
+  
+    @media (min-width: 1024px) {
+    .nav-button {
+      font-size: 2vw;
+    }
+    }
+  
+  /* Opcional: ajuste fino para telas muito pequenas */
+    @media (max-width: 480px) {
+    .nav-button {
+      font-size: 6vw;
+    }
+    }
