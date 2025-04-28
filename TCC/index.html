@@ -10,52 +10,54 @@
 </head>
 <body>
     <header>
-        <img src="./imagem/Logo_Empresa.png" alt="Logo da Empresa Sport Max">
-        <div class="pesquisa">
-            <input type="text" id="searchInput" placeholder="Pesquisar">
-        </div>
-
-        
+        <section class="cabecalho">
+            <img src="./imagem/Logo_Empresa.png" alt="Logo da Empresa Sport Max">
+    
+            <div class="pesquisa">
+                <input type="text" id="searchInput" placeholder="Pesquisar">
+                <button class="botao-pesquisa">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+    
+            <div class="icones">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <nav class="menu-lateral">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-house"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-info-circle"></i>
+                            Sobre
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-gears"></i>
+                            Serviços
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-envelope"></i>
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="botao-menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </section>
     </header>
     
-    <button class="botao-menu">
-        <i class="fa-solid fa-bars"></i>
-    </button>
-
-    <nav class="menu-lateral">
-        <ul>
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-house"></i>
-                    Home
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fas fa-info-circle"></i>
-                    Sobre
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-gears"></i>
-                    Serviços
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fas fa-envelope"></i>
-                    Contato
-                </a>
-            </li>
-        </ul>
-    </nav>
-
-    <div class="background"></div>
-
-
-    
-    <main class="conteudo">
+    <main>
         <div class="carrosel">  
             <div class="image-container active">  
                 <img src="imagem/BolaFutebol_carrosel.PNG" alt="Bola de futebol em promoção">  
@@ -84,7 +86,6 @@
             <img src="imagem/Produto2.png" alt="promoção2">
             <img src="imagem/Produto3.png" alt="promoção3">
         </div>
-
     </main>
 
     <script src="script.js"></script>
