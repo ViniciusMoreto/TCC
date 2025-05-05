@@ -56,7 +56,7 @@ header img {
  
 .icones i:hover {
     font-size: 30px;
-    color: var(--primary-color);
+    color: var(--text-color);
 }
  
 .pesquisa {
