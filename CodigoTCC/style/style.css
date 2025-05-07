@@ -4,7 +4,6 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: 0.2s linear;
 }
 
@@ -263,7 +262,7 @@ footer {
     margin-top: 50px;
     box-sizing: border-box; 
     font-family: 'Roboto', sans-serif;
-    border-top: 2px solid var(--primary-color);
+    border-top: 1px solid var(--primary-color);
 }
 
 footer h3 {
@@ -303,6 +302,7 @@ footer a{
 .icon_pagamento img {
     height: 20px;
 }
+
 
 
 .copyright {
