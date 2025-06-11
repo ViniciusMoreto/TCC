@@ -3,34 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style/login.css">
-    <title>SportMax Login</title>
+    <link rel="website icon" href="./imagem/Logo-icon.png">
+    <link rel="website icon" href="./imagem/pagina_inicial/Logo-icon.png">
+    <link rel="stylesheet" href="./style/login.css">
+    <title>Login SportMax</title>
 </head>
 <body>
     <header>
-        <img src="./imagem/Logo.jpeg" alt="Logo da Empresa Sport Max">
+        <div class="cabecalho">
+        <div class="logo">
+            <img src="./imagem/pagina_inicial/Logo.jpeg" alt="Logo SportMax" class="logo__img" />
+        </div>
+        <h1>Login</h1>
+        <nav>
+            <a href="./index.html">Home</a>
+        </nav>
+        </div>
     </header>
+
     <main>
-        <div class="container">
-            <form> 
-                <h1>Login SportMax</h1>
-                <div class="input-box">
-                    <input placeholder="Usuário" type="email">
-                </div>
-                <div class="input-box">
-                    <input placeholder="Senha" type="password" id="password" name="password" required>
-                </div>
-                <div class="remember-forgot">
-                    <a href="#">Esqueci minha senha</a>
-                </div>
-                <button type="submit" class="login">Login</button>
-                <div class="register-link">
-                    <p>Não tem uma conta? <a href="./cadastro.html">Cadastre-se</a></p>
-                </div>
+        <div class="login">
+            <form>
+                <h1 class="titulo">Login</h1>
+                <p class="Acesso">Acesse sua conta para continuar</p>
+                <input placeholder="E-mail" type="email" required/>
+                <input placeholder="Senha" type="password" required/>
+                <a href="#" class="esqueci__senha">Esqueci minha senha</a>
+                <button>Logar</button>
+                <p class="conta">Não tem uma conta? <a href="./cadastro.html">Cadastre-se</a></p>
             </form>
         </div>
-    </main>
-
+    </main> 
 </body>
 </html>
