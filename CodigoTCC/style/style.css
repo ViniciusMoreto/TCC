@@ -45,13 +45,13 @@ header {
 }
 
 nav a{
-    font-size: var(--font-size-botao);
     color: var(--branco-principal);
     padding: 0.5rem;
     text-decoration: none;
     cursor: pointer;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 13px;
+    font-family: var(--font-family);
 }
 
 nav a:hover {
