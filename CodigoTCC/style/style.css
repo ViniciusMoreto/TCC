@@ -96,9 +96,9 @@ nav a:hover {
 }
 
 .carrosel {
-    padding: 3rem;
-    align-items: center;
-    margin-top: 2rem;
+    text-align: center;
+    justify-content: center;
+    margin: 5rem 0 2rem 9rem;
 }
 
 .carrosel img {
@@ -106,39 +106,6 @@ nav a:hover {
     height: 250px;
     border-radius: 10px;
     margin-bottom: 3rem;
-}
-
-
-.image-container {
-    display: none; 
-}
- 
-.image-container.active {
-    display: block; 
-}
-
-.prev {
-    left: 50px;
-    color: var(--branco-principal); 
-}
- 
-.next {
-    right: 50px;
-    color: var(--branco-principal);
-}
-
-.carrosel button { 
-    position: absolute;
-    top: 60%;
-    background-color: var(--preto-principal);
-    border: none;
-    cursor: pointer;
-    padding: 0.5rem;
-    font-size: 1.5rem;  
-}
-
-.carrosel button:hover {
-    background-color: var(--color-botao-hover);
 }
 
 .produtos {
@@ -308,7 +275,6 @@ footer .container {
 .icon-redes i {
     font-size: 20px;
     color: var(--cor-texto);
-    transition: color 0.3s;
 }
  
 .icon-redes i:hover {
