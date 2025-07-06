@@ -7,6 +7,8 @@
     --font-size-botao: 16px;
     --font-family: 'Inter', sans-serif;
     --color-botao-hover: #0000FF;
+    --cinza-claro: #979797;
+    --azul-claro: #4c96f5;
 }
 
 body {
@@ -93,11 +95,6 @@ nav a:hover {
     color: var(--color-botao-hover);
 }
 
-
-
-
-
-
 main {
     display: flex;
     justify-content: center;
@@ -127,6 +124,8 @@ main {
 
 .info {
     display: flex;
+    color: var(--cinza-claro);
+    text-decoration: underline;
 }
 
 .info p {
@@ -134,19 +133,34 @@ main {
 
 }
 
-
-button {
+.tamanho {
     display: flex;
-    flex-direction: column;
-    background-color: var(--preto-principal);
-    color: var(--branco-principal);
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 15px;
-    margin-top: 10px;
-    
+    flex-wrap: wrap;
+    gap: 9px;
 }
-button:hover {
-    background-color: var(--color-botao-hover);
+
+.tamanho button {
+    color: var(--preto-principal);
+    background-color: var(--branco-principal);
+    border: 1px solid var(--cinza-claro);
+    padding: 10px 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: var(--font-size-botao);
+}
+.tamanho button:hover {
+    background-color: var(--azul-claro);
+    color: var(--branco-principal);
+    border: 1px solid var(--azul-claro);
+}
+
+.carrinho{
+    width: 100%;
+    height: 40px;
+    background-color: var(--azul-claro);
+    color: var(--branco-principal);
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
 }
