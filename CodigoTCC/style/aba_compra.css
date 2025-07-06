@@ -1,0 +1,152 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --preto-principal: #000000;
+    --cor-cabecalho: #000000;
+    --cor-texto: #000;
+    --cor-linha: #000000;
+    --font-size-botao: 16px;
+    --font-family: 'Inter', sans-serif;
+    --color-botao-hover: #0000FF;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--cor-cabecalho);
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 0 1rem;
+}
+
+.logo__img {
+    width: 100px;
+}
+
+.botao__pesquisa {
+    width: 500px;
+    height: 30px;
+    padding: 0 1rem;
+    border-radius: 12px;
+    border: none;
+}
+
+nav a{
+    color: var(--branco-principal);
+    padding: 0.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: var(--font-family);
+}
+
+nav a:hover {
+    color: var(--color-botao-hover);
+}
+
+.icones {
+    margin-right: 2rem;
+}
+
+.icones i {
+    font-size: 1.5rem;
+    color: var(--branco-principal);
+    cursor: pointer;
+}
+
+.icones i:hover {
+    color: var(--color-botao-hover);
+}
+
+.container {
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+
+.botao__categorias {
+    padding: 1rem;
+    border-bottom: 1px solid var(--cor-linha);
+}
+
+.botao__categorias a{
+    font-size: var(--font-size-botao);
+    color: var(--cor-texto);
+    padding: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.botao__categorias a:hover {
+    color: var(--color-botao-hover);
+}
+
+
+
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.product-image {
+    flex: 0.5; 
+}
+
+.product-details {
+    padding: 50px;
+}
+
+.product-details h1 {
+    font-size: 24px;
+}
+
+.product-details h2 {
+    color: #e63946;
+}
+
+.product-details p {
+    margin: 5px 0;
+    
+}
+
+.info {
+    display: flex;
+}
+
+.info p {
+    margin: 5px;
+
+}
+
+
+button {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--preto-principal);
+    color: var(--branco-principal);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 10px;
+    
+}
+button:hover {
+    background-color: var(--color-botao-hover);
+}
