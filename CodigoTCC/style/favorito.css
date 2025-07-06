@@ -63,12 +63,6 @@ nav a:hover {
   background-color: #f9f9f9;
 }
 
-input[type="checkbox"] {
-  transform: scale(1.5);
-  margin-right: 10px;
-  cursor: pointer;
-}
-
 .produto__info {
   display: flex;
   align-items: center;
@@ -80,10 +74,15 @@ input[type="checkbox"] {
   height: auto;
 }
 
+.categoria {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  padding: 1rem 3rem;
+}
 
-.produto__carrinho img {
-  width: 120px;
-  height: auto;
+.categoria h3 {
+  margin: 0;
 }
 
 .icone i {
@@ -95,4 +94,33 @@ input[type="checkbox"] {
 
 .icone i:hover {
   color: red;
+}
+
+.container__secundario {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.texto__barra {
+  margin-left: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.texto__barra:hover {
+  text-decoration: underline;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+  margin-right: 10px;
+  cursor: pointer;
 }

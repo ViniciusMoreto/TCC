@@ -138,8 +138,8 @@ main {
 button {
     display: flex;
     flex-direction: column;
-    background-color: #000000;
-    color: white;
+    background-color: var(--preto-principal);
+    color: var(--branco-principal);
     border: none;
     padding: 10px 15px;
     cursor: pointer;
@@ -148,7 +148,5 @@ button {
     
 }
 button:hover {
-    background-color: #d62839;
+    background-color: var(--color-botao-hover);
 }
-
-

@@ -72,12 +72,6 @@ nav a:hover {
   height: auto;
 }
 
-
-.produto__carrinho img {
-  width: 120px;
-  height: auto;
-}
-
 .categoria {
   display: flex;
   justify-content: space-between;
