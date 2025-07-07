@@ -101,19 +101,36 @@ main {
     margin-top: 50px;
 }
 
+.galeria{
+    display: flex;
+}
 
 .miniaturas{
+    display: flex;
     flex-direction: column;
-    width: 60px;
+}
+
+.miniaturas img {
+    width: 100px;
     cursor: pointer;
+    margin-left: 150px;
+    margin-bottom: 10px;
 }
 
 .imagem-principal{
-    width: 50%;
+    width: 40%;
+    height: auto;
+}
+
+.imagem-principal img {
+    width: 85%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .detalhes-produto {
-    padding: 50px;
+    margin-right: 100px;
+    width: 20%;
 }
 
 .detalhes-produto h1 {
