@@ -101,23 +101,30 @@ main {
     margin-top: 50px;
 }
 
-.product-image {
-    flex: 0.5; 
+
+.miniaturas{
+    flex-direction: column;
+    width: 60px;
+    cursor: pointer;
 }
 
-.product-details {
+.imagem-principal{
+    width: 50%;
+}
+
+.detalhes-produto {
     padding: 50px;
 }
 
-.product-details h1 {
+.detalhes-produto h1 {
     font-size: 24px;
 }
 
-.product-details h2 {
+.detalhes-produto h2 {
     color: #e63946;
 }
 
-.product-details p {
+.detalhes-produto p {
     margin: 5px 0;
     
 }
