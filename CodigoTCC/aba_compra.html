@@ -11,22 +11,13 @@
 <body>
     <header>
         <div class="cabecalho">
-            <div class="logo">
-                <img src="./imagem/Logo.png" alt="Logo SportMax" class="logo__img" />
-            </div>
-
-            <input class="botao__pesquisa" type="text" placeholder="Pesquisa"/>
-
-            <nav>
-                <a href="./login.html">Login/cadastre-se</a>
-                <a href="./favorito.html">Favorito</a>
-                <a href="./contato.html">Fale Conosco</a>
-                <a href="./cadastro_produto.html">Cadastrar produto</a>
-            </nav>
-
-            <div class="icones">
-                <a href="./carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
+        <div class="logo">
+           <a href="./index.html"><img src="./imagem/Logo.png" alt="Logo SportMax" class="logo__img"></a>
+        </div>
+        <h1>Adicionar Texto!!!</h1>
+        <nav>
+            <a href="./index.html">Home</a>
+        </nav>
         </div>
     </header>
 
@@ -43,7 +34,7 @@
     <main>
         <div class="galeria">
             <div class="miniaturas">
-                <img src="imagem/puma/deviate_nitro_branco/imagem1.avif" onclick="changeImage('imagem/puma/deviate_nitro_branco/imagem1.png')" alt="Deviate Nitro 3">
+                <img src="imagem/puma/deviate_nitro_branco/imagem1.avif" onclick="changeImage('imagem/puma/deviate_nitro_branco/imagem1.avif')" alt="Deviate Nitro 3">
                 <img src="imagem/puma/deviate_nitro_branco/imagem2.avif" onclick="changeImage('imagem/puma/deviate_nitro_branco/imagem2.avif')" alt="Deviate Nitro 3">
                 <img src="imagem/puma/deviate_nitro_branco/imagem3.avif" onclick="changeImage('imagem/puma/deviate_nitro_branco/imagem3.avif')" alt="Deviate Nitro 3">
                 <img src="imagem/puma/deviate_nitro_branco/imagem4.avif" onclick="changeImage('imagem/puma/deviate_nitro_branco/imagem4.avif')" alt="Deviate Nitro 3">
@@ -57,15 +48,23 @@
         </div>
         
         <div class="detalhes-produto">
-            <h1>Tênis Puma Deviete Nitro 3 Masculino</h1>
+            <h1>Tênis Puma Deviate Nitro 3 Masculino</h1>
             <div class="info">    
                 <p>Calçado</p>
                 <p>Esporte</p>
                 <p>Masculino</p>
             </div>
+            <p><s>R$ 2299,00</s>5% off</p>
             <h2>R$ 2184,99 no Pix</h2>
-            <p><s>R$ 2299,00</s> 5% off</p>
             <p>ou R$ 229,99 em até 10x sem juros</p>
+            <div class="cores-container">
+                <img src="imagem/puma/deviate_nitro_branco/imagem1.avif" alt="Branco" onclick="changeColor('branco')">
+                <img src="imagem/puma/deviate_nitro_preto/imagem1.avif" alt="Preto" onclick="changeColor('preto')">
+                <img src="imagem/puma/deviate_nitro_azul/imagem1.avif" alt="Azul" onclick="changeColor('azul')">
+                <img src="imagem/puma/deviate_nitro_amarelo/imagem1.avif" alt="Amarelo" onclick="changeColor('amarelo')">
+                <img src="imagem/puma/deviate_nitro_laranja/imagem1.avif" alt="Laranja" onclick="changeColor('laranja')">
+                <img src="imagem/puma/deviate_nitro_rosa/imagem1.avif" alt="Rosa" onclick="changeColor('rosa')">
+            </div>
             <h3>Selecione um tamanho</h3>
             <div class="tamanho">
                 <button>34</button>
@@ -83,12 +82,22 @@
                 <button>46</button>
             </div>
             <button class="carrinho">Adicionar ao carrinho</button>
+            </div>
     </main>
 
 
 <script>
     function changeImage(src) {
         document.getElementById('imagem-principal').src = src;
+    }
+
+    function changeColor(cor){
+        const miniaturas = document.querySelectorAll('.miniaturas img');
+        for (let i = 0; i < miniaturas.length; i++) {
+          miniaturas[i].src = 'imagem/puma/deviate_nitro_' + cor + '/imagem' + (i + 1) + '.avif'; 
+          miniaturas[i].setAttribute('onclick', "changeImage('imagem/puma/deviate_nitro_" + cor + "/imagem" + (i + 1) + ".avif')");
+      }
+        document.getElementById('imagem-principal').src = 'imagem/puma/deviate_nitro_' + cor + '/imagem1.avif';
     }
 </script>
 </body>
