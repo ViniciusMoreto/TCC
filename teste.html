@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual - Masculino e Feminino</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="CodigoTCC/style/teste.css">
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="CodigoTCC/imagem/Logo.png" alt="Logo SportMax" class="logo__img" />
+            </div>
+            <h1>Calçados</h1>
+            <nav>
+                <a href="./index.html">Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="container">
+            <div class="botao__categorias">
+                <a href="./atalho_roupa.html">Roupas</a>
+                <a href="./atalho_calcado.html">Calçados</a>
+                <a href="./atalho_esporte.html">Esportes</a>
+                <a href="./atalho_futebol.html">Futebol</a>
+                <a href="./atalho_basquete.html">Basquete</a>
+                <a href="./atalho_corrida.html">Corrida</a>
+                <a href="./atalho_parceiros.html">Parceiros</a>
+            </div>
+        </section>
+        
+        <div class="flex flex-col md:flex-row gap-8">
+            <aside class="w-full md:w-1/4 bg-white p-6 rounded-lg shadow-sm">
+                <h2 class="text-xl font-semibold mb-6">Filtro</h2>
+                
+                <div class="mb-6">
+                    <h3 class="font-medium mb-3">Gênero</h3>
+                    <div class="flex space-x-2">
+                        <button onclick="filterProducts('all')" class="filter-btn active px-4 py-2 border rounded-lg hover:bg-gray-100">Todos</button>
+                        <button onclick="filterProducts('male')" class="filter-btn px-4 py-2 border rounded-lg hover:bg-gray-100">Masculino</button>
+                        <button onclick="filterProducts('female')" class="filter-btn px-4 py-2 border rounded-lg hover:bg-gray-100">Feminino</button>
+                    </div>
+                </div>
+                
+            
+                
+            </aside>
+
+            <section class="w-full md:w-3/4">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-xl font-semibold">Produtos</h2>
+                    
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="products-container">
+                    <!-- Produtos serão inseridos aqui via JavaScript -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="CodigoTCC/teste.js"></script>
+</body>
+</html>
