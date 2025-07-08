@@ -7,72 +7,49 @@
     --font-size-botao: 16px;
     --font-family: 'Inter', sans-serif;
     --color-botao-hover: #0000FF;
+    --cinza-claro: #979797;
+    --azul-claro: #4c96f5;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background-color: var(--branco-principal);
+  text-align: center;
 }
 
 header {
-    background-color: var(--cor-cabecalho);
+  background-color: var(--preto-principal);
+  color: var(--branco-principal);
+  padding: 1rem;
 }
 
 .cabecalho {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo {
-    margin: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .logo__img {
-    width: 100px;
+  width: 80px;
 }
 
-.botao__pesquisa {
-    width: 500px;
-    height: 30px;
-    padding: 0 1rem;
-    border-radius: 12px;
-    border: none;
-}
-
-nav a{
-    color: var(--branco-principal);
-    padding: 0.5rem;
-    text-decoration: none;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 13px;
-    font-family: var(--font-family);
+nav a {
+  color: var(--branco-principal);
+  text-decoration: none;
+  font-weight: 600;
+  margin-right: 2rem;
 }
 
 nav a:hover {
-    color: var(--color-botao-hover);
-}
-
-.icones {
-    margin-right: 2rem;
-}
-
-.icones i {
-    font-size: 1.5rem;
-    color: var(--branco-principal);
-    cursor: pointer;
-}
-
-.icones i:hover {
-    color: var(--color-botao-hover);
+  color: var(--color-botao-hover);
 }
 
 .container {
     font-family: var(--font-family);
-    text-align: center;
 }
 
 
@@ -93,11 +70,6 @@ nav a:hover {
     color: var(--color-botao-hover);
 }
 
-
-
-
-
-
 main {
     display: flex;
     justify-content: center;
@@ -109,6 +81,10 @@ main {
 }
 
 .product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 50px;
 }
 
@@ -127,6 +103,8 @@ main {
 
 .info {
     display: flex;
+    color: var(--cinza-claro);
+    text-decoration: underline;
 }
 
 .info p {
@@ -134,19 +112,34 @@ main {
 
 }
 
-
-button {
+.tamanho {
     display: flex;
-    flex-direction: column;
-    background-color: var(--preto-principal);
-    color: var(--branco-principal);
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 15px;
-    margin-top: 10px;
-    
+    flex-wrap: wrap;
+    gap: 9px;
 }
-button:hover {
-    background-color: var(--color-botao-hover);
+
+.tamanho button {
+    color: var(--preto-principal);
+    background-color: var(--branco-principal);
+    border: 1px solid var(--cinza-claro);
+    padding: 10px 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: var(--font-size-botao);
+}
+.tamanho button:hover {
+    background-color: var(--azul-claro);
+    color: var(--branco-principal);
+    border: 1px solid var(--azul-claro);
+}
+
+.carrinho{
+    width: 100%;
+    height: 40px;
+    background-color: var(--azul-claro);
+    color: var(--branco-principal);
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
 }
