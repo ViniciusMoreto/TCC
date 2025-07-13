@@ -12,46 +12,58 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: var(--font-family);
-  background-color: var(--branco-principal);
-  text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-  background-color: var(--preto-principal);
-  color: var(--branco-principal);
-  padding: 1rem;
+    background-color: var(--cor-cabecalho);
 }
 
 .cabecalho {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 0 1rem;
 }
 
 .logo__img {
-  width: 80px;
+    width: 100px;
 }
 
-nav a {
-  color: var(--branco-principal);
-  text-decoration: none;
-  font-weight: 600;
-  margin-right: 2rem;
+.botao__pesquisa {
+    width: 500px;
+    height: 30px;
+    padding: 0 1rem;
+    border-radius: 12px;
+    border: none;
+}
+
+nav a{
+    color: var(--branco-principal);
+    padding: 0.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: var(--font-family);
 }
 
 nav a:hover {
-  color: var(--color-botao-hover);
+    color: var(--color-botao-hover);
 }
 
 .container {
     font-family: var(--font-family);
+    text-align: center;
+    justify-content: center;
+    background-color: var(--branco-principal);
 }
-
 
 .botao__categorias {
     padding: 1rem;
@@ -76,27 +88,49 @@ main {
     margin-top: 50px;
 }
 
-.product-image {
-    flex: 0.5; 
+.galeria{
+    display: flex;
 }
 
-.product-details {
+.miniaturas{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
 }
 
-.product-details h1 {
+.miniaturas img {
+    width: 70px;
+    cursor: pointer;
+    margin-left: 150px;
+    margin-bottom: 10px;
+}
+
+.imagem-principal{
+    width: 30%;
+    height: auto;
+}
+
+.imagem-principal img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.detalhes-produto {
+    margin-right: 100px;
+    width: 20%;
+}
+
+.detalhes-produto h1 {
     font-size: 24px;
 }
 
-.product-details h2 {
+.detalhes-produto h2 {
     color: #e63946;
 }
 
-.product-details p {
+.detalhes-produto p {
     margin: 5px 0;
     
 }
@@ -110,6 +144,26 @@ main {
 .info p {
     margin: 5px;
 
+}
+
+.cores-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-top: 10px;
+}
+
+.cores-container img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cores-container img:hover {
+    border: 1px solid var(--cinza-claro);
+    width: 58px;
+    height: 58px;
 }
 
 .tamanho {
