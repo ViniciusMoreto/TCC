@@ -6,6 +6,7 @@
   --cinza: #868686;
   --azul-hover: #0000ff;
   --fonte-principal: 'Inter', sans-serif;
+  --font-size-botao: 16px;
   --cor-linha: #000000;
 }
 
@@ -14,40 +15,71 @@ body {
   padding: 0;
   font-family: var(--fonte-principal);
   background-color: var(--branco);
-  text-align: center;
 }
 
 header {
-  background-color: var(--preto);
-  color: var(--branco);
-  padding: 1rem;
+    background-color: var(--preto);
 }
 
 .cabecalho {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;   /* permite quebra na linha se necessário */
+    gap: 10px;
+    padding: 0 1rem;
+}
+
+.logo {
+    margin: 0 1rem;
 }
 
 .logo__img {
-  width: 80px;
+    width: 100px;
 }
 
-nav a {
-  color: var(--branco);
-  text-decoration: none;
-  font-weight: 600;
-  margin-right: 2rem;
+.botao__pesquisa {
+    flex-grow: 1;       /* ocupa espaço disponível */
+    max-width: 600px;
+    height: 30px;
+    border-radius: 12px;
+    border: none;
+    padding: 0 1rem;
+    outline: none;
+}
+
+nav a{
+    color: var(--branco);
+    padding: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: var(--fonte-principal);
 }
 
 nav a:hover {
-  color: var(--azul-hover);
+    color: var(--azul-hover);
+}
+
+.icones {
+    margin-right: 2rem;
+  
+}
+  
+.icones i {
+    font-size: 1.5rem;
+    color: var(--branco);
+    cursor: pointer;
+    padding: 20px;
+}
+
+.icones i:hover {
+    color: var(--azul-hover);
 }
 
 .container {
-    font-family: var(--font-family);
+    font-family: var(--fonte-principal);
     text-align: center;
 }
 
@@ -59,7 +91,7 @@ nav a:hover {
 
 .botao__categorias a{
     font-size: var(--font-size-botao);
-    color: var(--cor-texto);
+    color: var(--preto);
     padding: 1rem;
     text-decoration: none;
     cursor: pointer;
