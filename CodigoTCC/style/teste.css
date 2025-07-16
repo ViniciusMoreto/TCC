@@ -47,22 +47,22 @@ nav a:hover {
 }
 
 .container {
-    font-family: var(--font-family);
-    text-align: center;
+  font-family: var(--font-family);
+  text-align: center;
 }
 
 
 .botao__categorias {
-    padding: 1rem;
-    border-bottom: 1px solid var(--cor-linha);
+  padding: 1rem;
+  border-bottom: 1px solid var(--cor-linha);
 }
 
 .botao__categorias a{
-    font-size: var(--font-size-botao);
-    color: var(--cor-texto);
-    padding: 1rem;
-    text-decoration: none;
-    cursor: pointer;
+  font-size: var(--font-size-botao);
+  color: var(--cor-texto);
+  padding: 1rem;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .botao__categorias a:hover {
@@ -74,4 +74,91 @@ nav a:hover {
 .filter-btn.active {
     background-color: #3b82f6;
     color: white;
+}
+
+
+
+
+
+
+.main-container {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.flex-container {
+    display: flex;
+    gap: 2rem;
+}
+
+#filter-aside {
+    height: 200px;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#filter-aside h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+#gender-filter {
+    margin-bottom: 1.5rem;
+}
+
+#gender-filter h3 {
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+#gender-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.filter-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background-color: #f0f0f0;
+}
+
+#products-section {
+    width: 100%;
+    max-width: 75%;
+}
+
+#products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+#products-header h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+#products-container {
+    display: grid;
+    gap: 1.5rem;
+}
+
+
+
+@media (min-width: 1024px) {
+    #products-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

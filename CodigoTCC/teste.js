@@ -2,30 +2,30 @@
 const products = [
     {
         id: 1,
-        name: "Camiseta Masculina Básica",
-        price: 59.90,
-        category: "Camisetas",
+        name: "Tênis de Corrida Deviate NITRO™ 3 Masculino",
+        price: 1199.99,
+        category: "Calçados",
         gender: "male",
-        image: "",
-        alt: "Camiseta masculina branca básica com tecido de algodão, modelagem clássica e etiqueta da marca no pescoço"
+        image: "imagem/puma/deviate nitro azul acizentado.png",
+        alt: "Tênis de Corrida Deviate NITRO™ 3 Masculino"
     },
     {
         id: 2,
-        name: "Vestido Floral Feminino",
-        price: 129.90,
-        category: "Vestidos",
+        name: "Tênis Mizuno Virtue Feminino",
+        price: 229.99,
+        category: "calçados",
         gender: "female",
-        image: "",
-        alt: "Vestido feminino floral em tons de rosa e verde, com corte evasê e tecido leve para verão"
+        image: "imagem/mizuno/tenis rosa prime.png",
+        alt: "Tênis Mizuno Virtue Feminino"
     },
     {
         id: 3,
-        name: "Calça Jeans Masculina",
+        name: "Tênis Air Jordan 1 Low Masculino",
         price: 159.90,
         category: "Calças",
         gender: "male",
-        image: "",
-        alt: "Calça jeans masculina azul escuro, modelo slim fit com cinco bolsos e fechamento por zíper"
+        image: "imagem/jordan/tenis air jordan low masculino.png",
+        alt: "Tênis Air Jordan 1 Low Masculino"
     },
     {
         id: 4,
