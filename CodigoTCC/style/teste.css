@@ -82,7 +82,7 @@ nav a:hover {
 
 
 .main-container {
-  max-width: 1500px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -95,7 +95,7 @@ nav a:hover {
 }
 
 #filter-aside {
-    height: 200px;
+    height: 275px;
     background-color: white;
     padding: 1.5rem;
     border-radius: 0.5rem;
@@ -119,6 +119,7 @@ nav a:hover {
 
 #gender-buttons {
     display: flex;
+    flex-direction: column;
     gap: 0.5rem;
 }
 
