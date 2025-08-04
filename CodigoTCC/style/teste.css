@@ -86,7 +86,9 @@ nav a:hover {
 
 
 .main-container {
-  max-width: 1200px;
+  max-width: 1600px;
+  
+  
   
 }
 
@@ -94,15 +96,16 @@ nav a:hover {
 
 .flex-container {
     display: flex;
-    gap: 2rem;
+    gap: 7rem;
 }
 
 #filter-aside {
-    height: 275px;
+    height: 290px;
     background-color: white;
-    padding: 1.5rem;
+    padding: 2rem;
     border-radius: 0.5rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-left: 11.5rem;
 }
 
 #filter-aside h2 {
@@ -139,7 +142,7 @@ nav a:hover {
 
 #products-section {
     width: 100%;
-    max-width: 75%;
+    max-width: 90%;
 }
 
 #products-header {
@@ -161,8 +164,10 @@ nav a:hover {
 
 
 
+
+
 @media (min-width: 1024px) {
     #products-container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
