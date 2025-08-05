@@ -3,66 +3,80 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/cadastro_produto.css" />
     <link rel="icon" href="./imagem/Logo-icon1.png">
-    <title>Cadastro Produto</title>
+    <link rel="stylesheet" href="./style/cadastro_produto.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Cadastro Produto - SportMax</title>
 </head>
 <body>
-    <header>
-        <div class="cabecalho">
-            <div class="logo">
-                <img src="./imagem/Logo.png" alt="Logo SportMax" class="logo__img" />
-            </div>
-            <h1>Cadastro de Produtos</h1>
-            <nav>
-                <a href="./index.html">Home</a>
-            </nav>
-        </div>
-    </header>
-
     <main>
         <div class="Cadastro__produto">
+            <a href="./index.html" class="voltar"><i class="fas fa-arrow-left"></i> Home</a>
             <form>
-                <h1 class="titulo">Cadastrar produto</h1>
+                <h1 class="titulo"><i class="fas fa-box"></i> Cadastro de Produto</h1>
 
-                <input class="campo__nome__produto" placeholder="Informe o nome do produto" type="text" required/>
-                
-                <input class="campo__preco"  placeholder="Informe o preço do produto" type="number"  required />
-                
-                <input class="campo__imagem" type="file" accept="image/*" required />
-                
-                <input type="text" placeholder="Informe as cores separadas por vírgula (ex: preto, azul)" required />
+                <div class="linha">
+                    <div class="campo-icone">
+                        <i class="fas fa-tag"></i>
+                        <input placeholder="Nome do produto" type="text" required/>
+                    </div>
 
-                <input type="text" placeholder="Informe os tamanhos separados por vírgula (ex: 35, 36)" required/>
+                    <div class="campo-icone">
+                        <i class="fas fa-dollar-sign"></i>
+                        <input placeholder="Preço" type="number" required />
+                    </div>
+                </div>
 
-                <textarea class="campo__descricao" placeholder="Descrição do produto" type="text" required></textarea>
+                <div class="linha">
+                    <div class="campo-icone">
+                        <i class="fas fa-image"></i>
+                        <input type="file" accept="image/*" required />
+                    </div>
 
-                <select name="categoria" id="categoria" required>
-                    <option value="" disabled selected>Selecione a categoria</option>
-                    <option value="roupa">Roupa</option>
-                    <option value="calçado">Calçado</option>
-                    <option value="esporte">Esporte</option>
-                    <option value="infantil">Infantil</option>
-                    <option value="bicicleta">Bicicleta</option>
-                </select>
+                    <div class="campo-icone">
+                        <i class="fas fa-list"></i>
+                        <select name="categoria" required>
+                            <option value="" disabled selected>Categoria</option>
+                            <option value="roupa">Roupa</option>
+                            <option value="calçado">Calçado</option>
+                            <option value="esporte">Esporte</option>
+                            <option value="futebol">Futebol</option>
+                            <option value="basquete">Basquete</option>
+                            <option value="corrida">Corrida</option>
+                        </select>
+                    </div>
+                </div>
 
-                <select name="marca" id="marca" required>
-                    <option value="" disabled selected>Selecione a marca</option>
-                    <option value="umbro">Umbro</option>
-                    <option value="addidas">Adidas</option>
-                    <option value="nike">Nike</option>
-                    <option value="puma">Puma</option>
-                    <option value="mizuno">Mizuno</option>
-                </select>
+                <div class="linha">
+                    <div class="campo-icone">
+                        <i class="fas fa-palette"></i>
+                        <input type="text" placeholder="Cores (ex: preto, azul)" required />
+                    </div>
 
-                <select name="sexo" id="sexo" required>
-                    <option value="" disabled selected>Selecione o sexo</option>
-                    <option value="roupa">Masculino</option>
-                    <option value="calçado">Feminino</option>
-                    <option value="esporte">Unissex</option>
-                </select>
+                    <div class="campo-icone">
+                        <i class="fas fa-ruler"></i>
+                        <input type="text" placeholder="Tamanhos (ex: 35, 36)" required/>
+                    </div>
+                </div>
 
-                <button type="submit">Enviar</button>
+                <div class="linha">
+                    <div class="campo-icone">
+                        <i class="fas fa-venus-mars"></i>
+                        <select name="sexo" required>
+                            <option value="" disabled selected>Sexo</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="unissex">Unissex</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="campo-icone">
+                    <i class="fas fa-align-left"></i>
+                    <textarea placeholder="Descrição do produto" required></textarea>
+                </div>
+
+                <button type="submit"><i class="fas fa-paper-plane"></i> Cadastrar Produto</button>
             </form>
         </div>
     </main>

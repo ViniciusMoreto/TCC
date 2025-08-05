@@ -23,84 +23,81 @@ body {
 header {
     background-color: var(--cor-cabecalho);
 }
-
+ 
+.barra-inicial{
+    background-color: var(--branco-principal);
+    text-align: right;
+    padding: 0.7%;
+    font-size: 13px;
+    font-family: var(--font-family);
+    padding-right: 5rem;
+}
+ 
+nav a{
+    color: var(--preto-principal);
+    padding: 0.5rem;
+    text-decoration: none;
+}
+ 
+nav a:hover {
+    color: var(--cinza-claro);
+}
+ 
 .cabecalho {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;   /* permite quebra na linha se necessário */
-    gap: 10px;
+    align-items: center;
     padding: 0 1rem;
+    font-family: var(--font-family);
 }
-
+ 
 .logo {
     margin: 0 1rem;
 }
-
+ 
 .logo__img {
     width: 100px;
 }
-
+ 
+.botao__categorias {
+    display: block;
+    align-items: center;
+}
+ 
+.botao__categorias a{
+    font-size: var(--font-size-botao);
+    color: var(--branco-principal);
+    padding: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+ 
+.botao__categorias a:hover {
+    color: var(--color-botao-hover);
+}
+ 
 .botao__pesquisa {
-    flex-grow: 1;       /* ocupa espaço disponível */
-    max-width: 600px;
+    max-width: 200px;
+    width: 100%;
     height: 30px;
     border-radius: 12px;
     border: none;
     padding: 0 1rem;
-    outline: none;
 }
-
-nav a{
-    color: var(--branco-principal);
-    padding: 2rem;
-    text-decoration: none;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 13px;
-    font-family: var(--font-family);
+ 
+.container-direita{
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
-
-nav a:hover {
-    color: var(--color-botao-hover);
-}
-
-.icones {
-    margin-right: 2rem;
-}
-
-.icones i {
+ 
+.container-direita i{
     font-size: 1.5rem;
     color: var(--branco-principal);
     cursor: pointer;
-    padding: 20px;
 }
-
-.icones i:hover {
-    color: var(--color-botao-hover);
-}
-
-.container {
-    font-family: var(--font-family);
-    text-align: center;
-    justify-content: center;
-    background-color: var(--branco-principal);
-}
-
-.botao__categorias {
-    padding: 1rem;
-    border-bottom: 1px solid var(--cor-linha);
-}
-
-.botao__categorias a{
-    font-size: var(--font-size-botao);
-    color: var(--cor-texto);
-    padding: 1rem;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.botao__categorias a:hover {
+ 
+.container-direita i:hover{
     color: var(--color-botao-hover);
 }
 
