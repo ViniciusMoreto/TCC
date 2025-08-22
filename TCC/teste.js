@@ -3,7 +3,7 @@
 const products = [
     {
         id: 1,
-        name: "Tênis de Corrida Deviate NITRO™ 3 Masculino",
+        name: "Tênis de Corrida Deviate NITRO™ 3",
         price: 1199.99,
         category: "Calçados",
         gender: "male",
@@ -12,7 +12,7 @@ const products = [
     },
     {
         id: 2,
-        name: "Tênis Mizuno Virtue Feminino",
+        name: "Tênis Mizuno Virtue",
         price: 229.99,
         category: "calçados",
         gender: "female",
@@ -21,7 +21,7 @@ const products = [
     },
     {
         id: 3,
-        name: "Tênis Air Jordan 1 Low Masculino",
+        name: "Tênis Air Jordan 1 Low",
         price: 159.90,
         category: "Calças",
         gender: "male",
@@ -73,7 +73,7 @@ function displayProducts(filter = 'all') {
         productCard.innerHTML = `
             <div class="relative">
                 <img src="${product.image}" alt="${product.alt}" class="w-full h-64 object-cover">
-                <button class="absolute top-2 right-2 bg-white p-2 rounded-full hover:bg-gray-100">
+                <button class="absolute top-2 right-2 text-gray p-2 rounded-full hover:bg-gray-100">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                     </svg>

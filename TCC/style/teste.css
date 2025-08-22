@@ -8,8 +8,8 @@
     --cor-cabecalho: #000000;
     --preto-principal: #000000;
     --color-botao-hover: #0000FF;
-    --azul: #306cecd0;
-    --azul-hover: #6589ff;
+    --azul: #061986d3;
+    --azul-hover: #232a41c7;
     --sombra: rgba(0,0,0,0.08);
     --font-size-botao: 16px;
     --font-family: 'Inter', sans-serif;
@@ -127,7 +127,6 @@ nav a:hover {
     box-shadow: 0 2px 8px var(--sombra);
     min-width: 220px;
     height: fit-content;
-    position: sticky;
     top: 100px;
 }
 
@@ -231,20 +230,8 @@ nav a:hover {
 #products-container span {
     font-size: 1.2rem;
     font-weight: bold;
-    color: var(--azul);
+    
 }
 
-#products-container button {
-    background: var(--azul);
-    color: var(--branco-principal);
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 0.6rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.2s ease-in-out;
-}
 
-#products-container button:hover {
-    background: var(--azul-hover);
-}
+
