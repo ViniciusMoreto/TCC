@@ -113,24 +113,21 @@ nav a:hover {
 .flex-container {
     display: flex;
     justify-content: center;
+    
     gap: 2rem;
     padding: 2rem;
     max-width: 1300px;
-    margin: 0 auto;
     flex-wrap: wrap;
 }
 
 /* ===== FILTRO ===== */
 #filter-aside {
-    display: block;
-    justify-content: right;
+    width: fit-content;
     background-color: var(--branco-principal);
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0 2px 8px var(--sombra);
-    min-width: 220px;
-    height: fit-content;
-    
+    align-self: flex-start;
 }
 
 #filter-aside h2 {
