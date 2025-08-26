@@ -7,8 +7,8 @@
     --cinza-claro: #979797;
     --cor-cabecalho: #000000;
     --preto-principal: #000000;
-    --color-botao-hover: #0000FF;
-    --azul: #061986d3;
+    --color-botao-hover: #0057FF;
+    --azul: #0057FF;
     --azul-hover: #232a41c7;
     --sombra: rgba(0,0,0,0.08);
     --font-size-botao: 16px;
@@ -112,6 +112,7 @@ nav a:hover {
 /* ===== LAYOUT PRINCIPAL ===== */
 .flex-container {
     display: flex;
+    justify-content: center;
     gap: 2rem;
     padding: 2rem;
     max-width: 1300px;
@@ -121,45 +122,46 @@ nav a:hover {
 
 /* ===== FILTRO ===== */
 #filter-aside {
+    display: block;
+    justify-content: right;
     background-color: var(--branco-principal);
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0 2px 8px var(--sombra);
     min-width: 220px;
     height: fit-content;
-    top: 100px;
+    
 }
 
 #filter-aside h2 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
 }
 
 #filter-aside h3 {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
     color: #555;
 }
 
 .filter-btn {
-    padding: 0.6rem;
+    padding: 0.4rem;
     border: 2px solid var(--azul);
     border-radius: 0.6rem;
     cursor: pointer;
     background: var(--branco-principal);
-    font-weight: 600;
+    font-weight: 500;
     color: var(--azul);
     transition: all 0.2s ease-in-out;
 }
 
 .filter-btn:hover {
-    background: var(--azul);
-    color: var(--branco-principal);
+    transform: translateY(-4px);
 }
 
 .filter-btn.active {
     background: var(--azul);
-    color: var(--branco);
+    color: var(--branco-principal);
 }
 
 /* ===== PRODUTOS ===== */
@@ -170,7 +172,7 @@ nav a:hover {
 
 #products-container {
     display: grid;
-    gap: 1.8rem;
+    gap: 1.4rem;
     flex: 1;
 }
 
@@ -203,34 +205,32 @@ nav a:hover {
 }
 
 #products-container img {
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
+    width: 300px;
+    height: 170px;
+    object-fit: contain;
 }
 
 #products-container .p-4 {
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    flex: 1;
 }
 
 #products-container h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
 }
 
 #products-container p {
     color: #666;
     font-size: 0.9rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
 }
 
 #products-container span {
-    font-size: 1.2rem;
-    font-weight: bold;
-    
+    font-size: 1.1rem;
+    font-weight: 700;
 }
 
 
