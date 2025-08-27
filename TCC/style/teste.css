@@ -117,7 +117,7 @@ nav a:hover {
     gap: 2rem;
     padding: 2rem;
     max-width: 1300px;
-    flex-wrap: wrap;
+    flex-wrap: wrap;z
 }
 
 /* ===== FILTRO ===== */
