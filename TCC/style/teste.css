@@ -111,23 +111,23 @@ nav a:hover {
 
 /* ===== LAYOUT PRINCIPAL ===== */
 .flex-container {
-    display: flex;
-    justify-content: center;
-    
+    display: grid;
+    grid-template-columns: 280px 1fr; /* filtro 250px | produtos ocupam o resto */
     gap: 2rem;
     padding: 2rem;
     max-width: 1300px;
-    flex-wrap: wrap;z
+    margin: 0 auto;
 }
 
 /* ===== FILTRO ===== */
 #filter-aside {
-    width: fit-content;
     background-color: var(--branco-principal);
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0 2px 8px var(--sombra);
-    align-self: flex-start;
+    position: sticky; /* mantém fixo ao rolar */
+    margin-top: 50px;
+    height: fit-content;
 }
 
 #filter-aside h2 {
@@ -194,6 +194,8 @@ nav a:hover {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     display: flex;
     flex-direction: column;
+    max-width: 350px; /* <<< largura máxima do card reduzida */
+    margin: 10 auto;
 }
 
 #products-container > div:hover {
@@ -202,7 +204,7 @@ nav a:hover {
 }
 
 #products-container img {
-    width: 300px;
+    width: 350px;
     height: 170px;
     object-fit: contain;
 }
