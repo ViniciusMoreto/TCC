@@ -110,6 +110,7 @@ nav a:hover {
     align-items: center;
     min-height: 70vh;
     padding: 30px;
+    font-family: var(--font-family-principal);
 }
 
 .thank-you {
@@ -273,19 +274,4 @@ footer {
     margin-top: 20px;
     color: #777;
     font-size: 0.85rem;
-}
-
-@media (max-width: 768px) {
-    .main-container {
-        padding: 15px;
-    }
-
-    .checkout-section {
-        padding: 20px;
-    }
-
-    .header .cabecalho {
-        flex-direction: column;
-        gap: 10px;
-    }
 }
