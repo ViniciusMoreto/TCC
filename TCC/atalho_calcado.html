@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/atalho_calcado.css">
+    <link rel="icon" href="./imagem/Logo-icon1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <script src="https://cdn.tailwindcss.com"></script>
+    <title>Calçados SportMax</title>
+</head>
+<body>
+    <header>
+        <div class="barra-inicial">
+            <nav>
+                <a href="./login.html">Entrar</a>  |
+                <a href="./ajuda.html">Ajuda</a>  |
+                <a href="./cadastro_produto.html">Cadastrar produto</a>
+            </nav>
+        </div>
+ 
+        <div class="cabecalho">
+            <div class="logo">
+                <a href="./index.html"><img src="./imagem/Logo.png" alt="Logo SportMax" class="logo__img" /></a>
+            </div>
+ 
+                <div class="botao__categorias">
+                    <a href="./atalho_roupa.html">Roupas</a>
+                    <a href="./atalho_calcado.html">Calçados</a>
+                    <a href="./atalho_esporte.html">Esportes</a>
+                    <a href="./atalho_futebol.html">Futebol</a>
+                    <a href="./atalho_basquete.html">Basquete</a>
+                    <a href="./atalho_corrida.html">Corrida</a>
+                </div>
+               
+               
+                <div class="container-direita">
+                    <input class="botao__pesquisa" type="search" placeholder="Buscar"/>
+                    <a href="./favorito.html"><i class="fa-solid fa-heart"></i></a>
+                    <a href="./carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+        </div>
+    </header>
+    
+    <main class="main-container">
+
+        <div class="flex-container">
+            <aside id="filter-aside">
+                <h2>Filtro</h2>
+            
+                <div id="gender-filter">
+                    <h3>Gênero</h3>
+                    <div id="gender-buttons">
+                        <button onclick="filterProducts('all')" class="filter-btn active">Todos</button>
+                        <button onclick="filterProducts('male')" class="filter-btn">Masculino</button>
+                        <button onclick="filterProducts('female')" class="filter-btn">Feminino</button>
+                    </div>
+                </div>
+
+
+
+            </aside>
+
+            <section id="products-section">
+                <div id="products-header">
+                    <h2>Produtos</h2>
+
+                </div>
+
+                <div id="products-container">
+                    <!-- Produtos serão inseridos aqui via JavaScript -->
+                </div>
+            </section>
+        </div>
+    </main>
+        
+        
+    <script src="atalhos.js"></script>
+</body>
+</html>
